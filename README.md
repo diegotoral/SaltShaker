@@ -38,4 +38,9 @@ sources:
     - /home/diegotoral/salt/formules
     - /salt/
   git: https://github.com/diegotoral/saltshaker-formules
+  
+top:
+  base:
+    - rvm
+    - vim
 ```
