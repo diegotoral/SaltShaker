@@ -3,6 +3,8 @@ SaltShaker
 
 Development environment provisioning with Salt made easy. Just **Shaker** it!
 
+*Shaker* is developed with `Python` and aims to be simple and fast to start using. *Shaker* uses [Salt](https://github.com/saltstack/salt) to provision your workstation. It reads *salt formules* from an *Git* repository (or from local directories).
+
 ## Installation ##
 
 To install *Shaker* use `pip`.
@@ -44,3 +46,9 @@ top:
     - rvm
     - vim
 ```
+### Configuration Options ###
+#### sources ####
+Where to find salt formules.
+
+#### top ####
+Allows you to override the `top.sls` file from the sources. The `top` parameter and `top.sls` are merged and the resulting configuration is executed.
