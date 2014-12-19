@@ -32,7 +32,7 @@ $ shaker
 
 ## Configuration ##
 
-*Shaker* configuration... [YAML]().
+*Shaker* uses [YAML](http://www.yaml.org/) to its configuration file `.shaker.yml`. This file lists sources and specify overrides for the main `top.sls` file.
 
 ```yaml
 sources:
@@ -48,7 +48,14 @@ top:
 ```
 ### Configuration Options ###
 #### sources ####
-Where to find salt formules.
+Specify Where *Shaker* must look for Salt formules.
+
+##### Avaliable options #####
+**local**
+: List where to look for Salt formules on the local filesystem.
+
+**git**
+: A Git repository to download and use as a source for Salt formules.
 
 #### top ####
 Allows you to override the `top.sls` file from the sources. The `top` parameter and `top.sls` are merged and the resulting configuration is executed.
