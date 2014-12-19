@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+from saltshaker.scripts import shaker_main
+
+
+if __name__ == '__main__':
+    shaker_main()
