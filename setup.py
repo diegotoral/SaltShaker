@@ -18,4 +18,5 @@ setup(name='saltshaker',
       license='MIT',
       packages=['saltshaker'],
       keywords='saltshaker salt provisioning',
+      scripts=['scripts/shaker'],
       zip_safe=False)
