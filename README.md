@@ -1,4 +1,4 @@
-SaltShaker
+SaltShaker [![Build Status](https://travis-ci.org/diegotoral/SaltShaker.svg?branch=master)](https://travis-ci.org/diegotoral/SaltShaker)
 ==========
 
 Development environment provisioning with Salt made easy. Just **Shaker** it!
