@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/diegotoral/SaltShaker.svg?branch=master)](https://travis-ci.org/diegotoral/SaltShaker) [![Latest Version](https://pypip.in/version/saltshaker/badge.svg?text=version)](https://pypi.python.org/pypi/saltshaker/) [![Downloads](https://pypip.in/download/saltshaker/badge.svg?period=day|week|month)](https://pypi.python.org/pypi/saltshaker/) [![License](https://pypip.in/license/saltshaker/badge.svg)](https://pypi.python.org/pypi/saltshaker/)
+[![Build Status](https://travis-ci.org/diegotoral/SaltShaker.svg?branch=master)](https://travis-ci.org/diegotoral/SaltShaker) [![Latest Version](https://pypip.in/version/saltshaker/badge.svg?text=version)](https://pypi.python.org/pypi/saltshaker/) [![Downloads](https://pypip.in/download/saltshaker/badge.svg?period=day|week|month)](https://pypi.python.org/pypi/saltshaker/) [![License](https://pypip.in/license/saltshaker/badge.svg)](https://pypi.python.org/pypi/saltshaker/) [![Coverage Status](https://img.shields.io/coveralls/diegotoral/SaltShaker.svg)](https://coveralls.io/r/diegotoral/SaltShaker)
 
 SaltShaker
 ==========
