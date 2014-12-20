@@ -9,6 +9,6 @@ install:
   - pip install coveralls
   - pip install -r requirements
 script:
-  coverage run --source=saltshaker setup test
+  coverage run --source=saltshaker setup.py test
 after_success:
   coveralls
