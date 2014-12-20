@@ -22,7 +22,7 @@ class TestConfig(unittest.TestCase):
         self.assertRaises(ConfigurationError, load_config, '/some/path')
 
     def test_load_config_for_valid_path(self):
-        path = self._write_config_file('.shaker.yml', '')
+        path = self._write_config_file('.shaker.yml', b'')
         self.assertEqual(load_config(path), None)
 
     def test_load_config_with_sources(self):
