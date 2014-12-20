@@ -19,4 +19,6 @@ setup(name='saltshaker',
       packages=['saltshaker'],
       keywords='saltshaker salt provisioning',
       scripts=['scripts/shaker'],
+      test_suite='nose.collector',
+      tests_require=['nose'],
       zip_safe=False)
