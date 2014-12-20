@@ -5,5 +5,10 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
-install: "pip install -r requirements"
-script: sh tests/runtests.sh
+install:
+  - pip install coveralls
+  - pip install -r requirements
+script:
+  coverage run --source=saltshaker sh tests/runtests.sh
+after_success:
+  coveralls
