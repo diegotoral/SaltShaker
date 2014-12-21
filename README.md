@@ -18,46 +18,54 @@ $ pip install saltshaker
 ## Usage ##
 ### Creating a config file ###
 
-*Shaker* `init` command can be used to start a new configuration file within the current directory.
+*Shaker* `init` command can be used to start a new configuration file.
 
 ```sh
 $ shaker init
 ```
 
+A configuration file will be created at `$HOME/.shaker/config.yml`.
+
 ### Running Shaker ###
 
-Running *Shaker* is really simple.
+When configuration is done you can start *Shaker*.
 
 ```sh
 $ shaker
 ```
 
+*Shaker* will read the configuration from `$HOME/.shaker/config.yml` and start provisioning the machine.
+
 ## Configuration ##
 
-*Shaker* uses [YAML](http://www.yaml.org/) to its configuration file `.shaker.yml`. This file lists sources and specify overrides for the main `top.sls` file.
+*Shaker* configuration files are simple [YAML](http://www.yaml.org/) files. The configuration tells Shaker where to find `salt formules` to use.
 
 ```yaml
 sources:
   local:
     - /home/diegotoral/salt/formules
-    - /salt/
+    - /tmp/formules
   git: https://github.com/diegotoral/saltshaker-formules
-  
+
 top:
   base:
     - rvm
     - vim
 ```
+
 ### Configuration Options ###
 #### sources ####
-Specify Where *Shaker* must look for Salt formules.
 
-##### Avaliable options #####
-**local**
-: List where to look for Salt formules on the local filesystem.
+By default *Shaker* looks for `salt formules` at `$HOME/.shaker/formules`. The `sources` option allows you to specify other places where *Shaker* may find formules.
 
-**git**
-: A Git repository to download and use as a source for Salt formules.
+##### local #####
+
+Directories where to look for salt formules on the local filesystem.
+
+##### git ####
+
+Git repository url to download and use as a `source`.
 
 #### top ####
+
 Allows you to override the `top.sls` file from the sources. The `top` parameter and `top.sls` are merged and the resulting configuration is executed.
