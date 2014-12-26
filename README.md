@@ -7,6 +7,8 @@ Development environment provisioning with Salt made easy. Just **Shaker** it!
 
 *Shaker* is developed with `Python` and aims to be simple and fast to start using. *Shaker* uses [Salt](https://github.com/saltstack/salt) to provision your workstation. It reads *salt formules* from an *Git* repository (or from local directories).
 
+Currently, this project is in active development mode, so if you would like to have a new feature, feel free to open an issue. You are welcome to contribute to the project.
+
 ## Installation ##
 
 To install *Shaker* use `pip`.
